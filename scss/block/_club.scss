@@ -1,0 +1,73 @@
+.club{
+    margin: 0 auto;
+    width: 1100px;
+    height: 500px;
+    &_text{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 10%;
+    }
+    &_content{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        &_img{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &_card{
+            width: 50%;
+            height: 100%;
+            .levl{
+                flex-wrap: wrap;
+                display: flex;
+                width: 550px;
+                height: 285px;
+                .lcard{
+                    width: 200px;
+                    height: 120px;
+                }
+            }
+            .p{
+                height: 50px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1000px){
+    .club{
+        height: 1100px;
+        width: 100%;
+        &_content{
+            width: 100%;
+        }
+    }
+    .club_content_img{
+        display: none;
+    }
+    .club_content_card{
+        display: flex;
+        width: 100%;
+        height: 1200px;
+        .levl{
+            text-align: center;
+            margin-left: 10px;
+            height: 1000px;
+            width: 1000px;
+            .lcard{
+                width: 100%;
+            }
+        }
+    }
+}

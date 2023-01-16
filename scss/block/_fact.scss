@@ -1,0 +1,39 @@
+.fact{
+    margin: 0 auto;
+    width: 1000px;
+    height: 350px;
+    &_text{
+        text-align: center;
+        width: 100%;
+        height: 20%;
+    }
+    &_card{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 80%;
+        .fcard{
+            text-align: center;
+            width: 235px;
+            height: 260px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1000px){
+    .fact{
+        height: 1300px;
+        width: 100%;
+        flex-direction: column;
+        &_text{
+            padding-top: 100px;
+        }
+        &_card{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
